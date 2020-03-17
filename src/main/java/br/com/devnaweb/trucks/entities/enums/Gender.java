@@ -2,13 +2,12 @@ package br.com.devnaweb.trucks.entities.enums;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 
-public enum LocaleType {
+public enum Gender {
 
-    ORIGIN("ORIGIN"), DESTINY("DESTINY");
-
+    MALE("MALE"), FEMALE("FEMALE");
     private String value;
 
-    LocaleType(String value) {
+    Gender(String value) {
         this.value = value;
     }
 
@@ -17,10 +16,10 @@ public enum LocaleType {
     }
 
     @JsonCreator
-    public static LocaleType fromValue(String text) {
-        for (LocaleType lt : LocaleType.values()) {
-            if (String.valueOf(lt.value).equalsIgnoreCase(text)) {
-                return lt;
+    public static Gender fromValue(String text) {
+        for (Gender g : Gender.values()) {
+            if (String.valueOf(g.value).equalsIgnoreCase(text)) {
+                return g;
             }
         }
         return null;
