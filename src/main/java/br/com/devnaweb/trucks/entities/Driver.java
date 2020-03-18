@@ -5,6 +5,7 @@ import br.com.devnaweb.trucks.entities.enums.Gender;
 import br.com.devnaweb.trucks.entities.enums.TruckType;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,6 +19,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import java.sql.Timestamp;
 import java.util.List;
 
 @Entity
@@ -26,6 +28,7 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
+@Builder
 public class Driver {
 
     @Id
@@ -39,7 +42,7 @@ public class Driver {
 
     @Basic
     @Column(name = "AGE", nullable = false)
-    private String age;
+    private Long age;
 
     @Basic
     @Enumerated
@@ -63,12 +66,12 @@ public class Driver {
 
     @Basic
     @Column(name = "CREATION_DATE")
-    private String creationDate;
+    private Timestamp creationDate;
 
     @Basic
     @Column(name = "LAST_UPDATE_DATE")
-    private String lastUpdateDate;
+    private Timestamp lastUpdateDate;
 
-    @OneToMany(mappedBy = "driver")
-    private List<Locale> locale;
+    @OneToMany(mappedBy = "driverId")
+    private List<Locale> locales;
 }

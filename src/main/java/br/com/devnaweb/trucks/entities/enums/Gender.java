@@ -7,7 +7,7 @@ public enum Gender {
     MALE("MALE"), FEMALE("FEMALE");
     private String value;
 
-    Gender(String value) {
+    Gender(final String value) {
         this.value = value;
     }
 
@@ -16,7 +16,7 @@ public enum Gender {
     }
 
     @JsonCreator
-    public static Gender fromValue(String text) {
+    public static Gender fromValue(final String text) {
         for (Gender g : Gender.values()) {
             if (String.valueOf(g.value).equalsIgnoreCase(text)) {
                 return g;
