@@ -12,7 +12,7 @@ public enum TruckType {
 
     private String value;
 
-    TruckType(String value) {
+    TruckType(final String value) {
         this.value = value;
     }
 
@@ -21,7 +21,7 @@ public enum TruckType {
     }
 
     @JsonCreator
-    public static TruckType fromValue(String text) {
+    public static TruckType fromValue(final String text) {
         for (TruckType tt : TruckType.values()) {
             if (String.valueOf(tt.value).equalsIgnoreCase(text)) {
                 return tt;

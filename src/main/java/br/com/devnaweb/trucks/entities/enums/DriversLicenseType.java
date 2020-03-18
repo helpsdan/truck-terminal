@@ -8,7 +8,7 @@ public enum DriversLicenseType {
 
     private String value;
 
-    DriversLicenseType(String value) {
+    DriversLicenseType(final String value) {
         this.value = value;
     }
 
@@ -17,7 +17,7 @@ public enum DriversLicenseType {
     }
 
     @JsonCreator
-    public static DriversLicenseType fromValue(String text) {
+    public static DriversLicenseType fromValue(final String text) {
         for (DriversLicenseType dl : DriversLicenseType.values()) {
             if (String.valueOf(dl.value).equalsIgnoreCase(text)) {
                 return dl;
