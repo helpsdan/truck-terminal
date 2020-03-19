@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @AllArgsConstructor
-public class UpdateDrivers {
+public class UpdateDriver {
 
     @Autowired
     private CreateLocale createLocale;
