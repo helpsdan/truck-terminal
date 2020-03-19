@@ -21,10 +21,10 @@ import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.when;
 
 @SpringBootTest
-public class UpdateDriversUnitTest {
+public class UpdateDriverUnitTest {
 
     @InjectMocks
-    private UpdateDrivers updateDrivers;
+    private UpdateDriver updateDrivers;
 
     @Mock
     private DriverRepository driverRepository;

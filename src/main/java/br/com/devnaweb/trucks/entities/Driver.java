@@ -57,7 +57,7 @@ public class Driver {
     private DriversLicenseType driversLicenseType;
 
     @Basic
-    @Column(name = "IS_lOADED")
+    @Column(name = "IS_LOADED")
     private boolean isLoaded;
 
     @Basic

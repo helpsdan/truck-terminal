@@ -37,6 +37,21 @@ public class DriverFixture {
                 (defaultDriver(7L, true, true)));
     }
 
+    public static List<Driver> defaultListDriversNoCharge() {
+        return Arrays.asList(
+                (defaultDriver(3L, false, true)),
+                (defaultDriver(4L, false, false)),
+                (defaultDriver(5L, false, true)));
+    }
+
+    public static List<Driver> defaultListDriversWithHisOwnTruck() {
+        return Arrays.asList(
+                defaultDriver(1L, true, true),
+                (defaultDriver(3L, false, true)),
+                (defaultDriver(5L, false, true)),
+                (defaultDriver(7L, true, true)));
+    }
+
     private static Driver defaultDriver(final long id, final boolean loaded, final boolean ownTruck) {
         return Driver.builder()
                 .name("Daniel Aguiar")
