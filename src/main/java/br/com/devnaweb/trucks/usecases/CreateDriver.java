@@ -35,6 +35,7 @@ public class CreateDriver {
                 .isLoaded(driver.isLoaded())
                 .truckType(driver.getTruckType())
                 .lastUpdateDate(DateUtils.getDateToday())
+                .locales(driver.getLocales())
                 .creationDate(DateUtils.getDateToday())
                 .build();
     }

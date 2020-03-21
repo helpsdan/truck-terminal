@@ -16,7 +16,7 @@ public class GetTrucks {
 
     public TruckReport execute() {
         return TruckReport.builder()
-                .today(driverRepository.findAllByCreationDateBetween(DateUtils.getDateToday(),
+                .today(driverRepository.findAllByCreationDateBetween(DateUtils.getFirstHourThisDay(),
                         DateUtils.getDateToday()).size())
                 .week(driverRepository.findAllByCreationDateBetween(DateUtils.getDateFirstDayThisWeek(),
                         DateUtils.getDateToday()).size())

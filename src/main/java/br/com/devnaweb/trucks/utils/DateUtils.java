@@ -11,6 +11,10 @@ public class DateUtils {
         return Timestamp.valueOf(getLocalDateTimeNow());
     }
 
+    public static Timestamp getFirstHourThisDay() {
+        return Timestamp.valueOf(getLocalDateTimeNow().minus(getLocalDateTimeNow().getHour(), ChronoUnit.HOURS));
+    }
+
     public static Timestamp getDateFirstDayThisWeek() {
         return Timestamp.valueOf(getDayOfWeek(getLocalDateTimeNow().getDayOfWeek()));
     }

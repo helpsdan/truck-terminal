@@ -22,6 +22,12 @@ public class DateUtilsUnitTest {
     }
 
     @Test
+    @DisplayName("Deve ser possível retornar o primeiro horário do dia.")
+    void shouldGetFirstHourThisDay() {
+        assertNotNull(DateUtils.getFirstHourThisDay());
+    }
+
+    @Test
     @DisplayName("Deve ser possível retornar o primeiro dia desse mês.")
     void shouldGetFirstDayThisMonth() {
         assertNotNull(DateUtils.getDateFirstDayOfTheMonth());
