@@ -50,6 +50,10 @@ Feito a instalação, importe a collection: **truck_terminal.postman_collection.
 
 Agora sinta-se à vontade para testar a aplicação, todos os endpoints disponíveis só funcionarão com a aplicação rodando, lembre-se disso.
 
+# Outros
+A fim de documentar as tarefas produzidas, criei um board no **Trello** para definir o que iria fazer. 
+>[Board público no Trello.](https://trello.com/b/o9WvoKSO/truck-terminal)
+
 Me coloco à disposição para maiores esclarecimentos.
 
 Contato:
