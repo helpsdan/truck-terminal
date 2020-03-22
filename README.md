@@ -53,7 +53,7 @@ Agora sinta-se à vontade para testar a aplicação, todos os endpoints disponí
 Me coloco à disposição para maiores esclarecimentos.
 
 Contato:
->[Email: daniel_aguiar_alves@hotmail.com](daniel_aguiar_alves@hotmail.com)  
+>Email: daniel_aguiar_alves@hotmail.com   
 >[Whatssapp: +55 11 954372685](https://api.whatsapp.com/send?phone=5511954372685&text=Ol%C3%A1%20Daniel%2C%20tudo%20bem%3F)  
 >[Meu site pessoal](https://eu-danialves.com.br)  
 >[Meu blog pessoal em construção](https://devnaweb.com.br)
