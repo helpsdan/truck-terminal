@@ -1,5 +1,6 @@
 package br.com.devnaweb.trucks.entities;
 
+import br.com.devnaweb.trucks.entities.enums.LocaleType;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,6 +11,7 @@ import lombok.Setter;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -34,12 +36,9 @@ public class Locale {
     private Long driverId;
 
     @Basic
-    @Column(name = "ORIGIN", nullable = false)
-    private boolean origin;
-
-    @Basic
-    @Column(name = "DESTINY", nullable = false)
-    private boolean destiny;
+    @Enumerated
+    @Column(name = "LOCALE_TYPE", nullable = false)
+    private LocaleType localeType;
 
     @Basic
     @Column(name = "LONGITUDE", nullable = false)

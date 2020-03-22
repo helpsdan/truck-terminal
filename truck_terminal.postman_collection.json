@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "706ab5c9-2e2b-45db-95e8-7efcdcce489c",
+		"name": "Truck Terminal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Driver",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"João Batista\",\n\t\"age\": 45, \n\t\"gender\": \"MALE\",\n\t\"hasOwnTruck\": false,\n\t\"driversLicenseType\": \"D\",\n\t\"isLoaded\": false,\n\t\"truckType\": \"TRUCK\",\n\t\"locales\": [\n\t\t{\n\t\t\t\"localeType\": \"ORIGIN\",\n\t\t\t\"longitude\": 23131313,\n\t\t\t\"latitude\": 12313123\n\t\t},\n\t\t{\n\t\t\t\"localeType\": \"DESTINY\",\n\t\t\t\"longitude\": 12321321,\n\t\t\t\"latitude\": 23131313\n\t\t}\n\t]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/truck/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"truck",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Drivers No Charge",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/truck/get-drivers-no-charge",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"truck",
+						"get-drivers-no-charge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Drivers Own Truck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/truck/get-driver-own-truck",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"truck",
+						"get-driver-own-truck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Locales Grouped",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/truck/get-locales-grouped",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"truck",
+						"get-locales-grouped"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Trucks Report",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/truck/get-trucks-report",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"truck",
+						"get-trucks-report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Driver",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"João Batista\",\n\t\"age\": 45, \n\t\"gender\": \"MALE\",\n\t\"hasOwnTruck\": false,\n\t\"driversLicenseType\": \"D\",\n\t\"isLoaded\": false,\n\t\"truckType\": \"TRUCK\",\n\t\"locales\": [\n\t\t{\n\t\t\t\"localeType\": \"ORIGIN\",\n\t\t\t\"longitude\": 23131313,\n\t\t\t\"latitude\": 12313123\n\t\t},\n\t\t{\n\t\t\t\"localeType\": \"DESTINY\",\n\t\t\t\"longitude\": 12321321,\n\t\t\t\"latitude\": 23131313\n\t\t}\n\t]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/truck/update/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"truck",
+						"update",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

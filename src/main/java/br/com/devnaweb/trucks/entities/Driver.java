@@ -46,6 +46,7 @@ public class Driver {
 
     @Basic
     @Enumerated
+    @Column(name = "GENDER", nullable = false)
     private Gender gender;
 
     @Basic
@@ -54,6 +55,7 @@ public class Driver {
 
     @Basic
     @Enumerated
+    @Column(name = "LICENSE_TYPE", nullable = false)
     private DriversLicenseType driversLicenseType;
 
     @Basic
@@ -62,6 +64,7 @@ public class Driver {
 
     @Basic
     @Enumerated
+    @Column(name = "TRUCK_TYPE", nullable = false)
     private TruckType truckType;
 
     @Basic
