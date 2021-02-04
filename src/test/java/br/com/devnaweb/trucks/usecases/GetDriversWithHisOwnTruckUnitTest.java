@@ -31,7 +31,7 @@ public class GetDriversWithHisOwnTruckUnitTest {
     }
 
     @Test
-    @DisplayName("Deve ser possível retornar os caminhoneiros que possuem seu próprio caminhão.")
+    @DisplayName("Should ger drivers with his own truck")
     void shouldGetDriverWithHisOwnTruck() {
         List<Driver> driversWithOwnTruck = getDriversWithHisOwnTruck.execute();
 

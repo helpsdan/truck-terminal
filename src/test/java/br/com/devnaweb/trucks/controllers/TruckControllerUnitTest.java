@@ -66,7 +66,7 @@ public class TruckControllerUnitTest extends AbstractControllerTest {
     }
 
     @Test
-    @DisplayName("Deve ser possível criar um motorista de caminhão")
+    @DisplayName("Should create a truck driver")
     void shouldCreateDriver() throws Exception {
         final Driver driver = DriverFixture.defaultValues();
         when(createDriver.execute(any())).thenReturn(driver);
@@ -87,7 +87,7 @@ public class TruckControllerUnitTest extends AbstractControllerTest {
     }
 
     @Test
-    @DisplayName("Deve ser possível retornar uma lista com os caminhões que estão sem carga")
+    @DisplayName("Should get drivers without charge")
     void shouldGetDriversNoCharge() throws Exception {
         final List<Driver> drivers = DriverFixture.defaultListDriversNoCharge();
         when(getDriversNoCharge.execute()).thenReturn(drivers);
@@ -100,7 +100,7 @@ public class TruckControllerUnitTest extends AbstractControllerTest {
     }
 
     @Test
-    @DisplayName("Deve ser possível retornar uma lista com os caminhoneiros que possuem caminhão próprio ")
+    @DisplayName("Should get drivers with his own truck")
     void shouldGetDriversWithHisOwnTruck() throws Exception {
         final List<Driver> drivers = DriverFixture.defaultListDriversWithHisOwnTruck();
         when(getDriversNoCharge.execute()).thenReturn(drivers);
@@ -113,7 +113,7 @@ public class TruckControllerUnitTest extends AbstractControllerTest {
     }
 
     @Test
-    @DisplayName("Deve ser possível retornar uma lista de locais agrupada por tipo")
+    @DisplayName("Should get locales grouped by truck type")
     void shouldGetLocales() throws Exception {
         final Locales locales = Locales.builder()
                 .destiny(LocaleFixture.defaultListLocales())
@@ -130,7 +130,7 @@ public class TruckControllerUnitTest extends AbstractControllerTest {
     }
 
     @Test
-    @DisplayName("Deve ser possível retornar o relatório de caminhões que passaram no terminal")
+    @DisplayName("Should get trucks")
     void shouldGetTrucks() throws Exception {
         final TruckReport truckReport = TruckReport.builder().today(10).week(234).month(1233).build();
         when(getTrucks.execute()).thenReturn(truckReport);
@@ -144,7 +144,7 @@ public class TruckControllerUnitTest extends AbstractControllerTest {
     }
 
     @Test
-    @DisplayName("Deve ser possível atualizar um motorista com seus novos dados")
+    @DisplayName("Should update truckss")
     void shouldUpdateDriver() throws Exception {
         final Driver driver = DriverFixture.defaultValues();
         when(updateDriver.execute(anyLong(), any())).thenReturn(driver);

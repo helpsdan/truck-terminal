@@ -1,63 +1,77 @@
 # TRUCK TERMINAL
-Olá! É com muito prazer que apresento a vocês o sistema que desenvolvi. Foi desenvolvido na linguagem **Java** utilizando **Spring** para produzir a REST api de gerenciamento de terminal de caminhões.
 
-# Configuração de ambiente
- **É necessário ter instalado na máquina a versão 8 do Java**.
- - Para sistema operacional Windows:
-	 > [Link para download](https://www.java.com/pt_BR/download/help/windows_manual_download.xml)
-- Para sistema operacional Mac OS:
-	> [Link para download](https://www.java.com/pt_BR/download/help/mac_install.xml)
-- Para sistema operacional Linux:
-	>[Link para download](https://www.java.com/pt_BR/download/help/linux_install.xml)
+Hello! It is with great pleasure that I present to you the system that I developed. It was developed in the **Java**
+language using **Spring** to produce the REST truck terminal management api.
 
-Baixe esse repositório para sua área de trabalho ou o local que preferir.
+# Environment configuration
 
-Para visualizar melhor o código desenvolvido, instale uma IDE de sua preferência mas, eu sugiro o **Intellij da JetBrains** pois utilizei alguns plugins que estão disponíveis nele.
+**Version 8 of Java must be installed on the machine**.
 
-- Para sistema operacional Windows:
-	> [Link para download](https://www.jetbrains.com/idea/download/#section=windows)
-- Para sistema operacional Mac OS:
-	>[Link para download](https://www.jetbrains.com/idea/download/#section=mac)
-- Para sistema operacional Linux:
-	>[Link para download](https://www.jetbrains.com/idea/download/#section=linux)
+- For Windows operating system:
+  > [Download link](https://www.java.com/pt_BR/download/help/windows_manual_download.xml)
+- For Mac OS operating system:
+  > [Download link](https://www.java.com/pt_BR/download/help/mac_install.xml)
+- For Linus operating system:
+  > [Download link](https://www.java.com/pt_BR/download/help/linux_install.xml)
 
-Após concluir a instalação, abra o projeto na IDE e aguarde o download das dependências do projeto.
+Download this repository to your desktop or the location of your choice.
 
-É necessário adicionar o plugin do **Lombok** para que não quebre a aplicação, ele não traz nenhum grande ganho de performance, mas ele diminui a complexidade de código, a quantidade de linhas e aumenta a qualidade do código.
+To better visualize the developed code, install an IDE of your choice but, I suggest **Intellij from
+JetBrains** because I used some plugins that are available in it.
 
-- Para instalar:
-> File --> Settings --> Plugins --> Instale o Lombok
+- For Windows operating system:
+  > [Download link](https://www.jetbrains.com/idea/download/#section=windows)
+- For Mac OS operating system:
+  > [Download link](https://www.jetbrains.com/idea/download/#section=mac)
+- For Linus operating system:
+  > [Download link](https://www.jetbrains.com/idea/download/#section=linux)
 
-![Adicionando um plugin](https://user-images.githubusercontent.com/4295964/28477847-bdea8c28-6e0a-11e7-988f-85584c20ac73.png)
+After completing the installation, open the project in the IDE and wait for the project dependencies to download.
 
-# Executando a aplicação
+It is necessary to add the **Lombok** plugin so that it does not break the application, it does not bring any great gain of
+performance, but it decreases the code complexity, the number of lines and increases the quality of the code.
 
-Para executar a aplicação, clique com o botão direito sobre o arquivo: **TruckTerminalApplication** que encontra-se na pasta **br.com.devnaweb.trucks** e pressione **Run**.
+- To install:
 
-Você poderá ver a aplicação rodando na porta **8080**. Deixei alguns dados programados para inserção no banco de dados durante o tempo de compilação a fim de testes manuais dos endpoints desenvolvidos. Para acessar o banco de dados, vá para:
->[LOCALHOST](http://localhost:8080/h2)
+> File --> Settings --> Plugins --> Install Lombok
 
-Você pode também ver a cobertura de código em testes e executar os testes da aplicação clicando com o botão direito na pasta **java** que encontra-se em **test** e selecionando o desejado ou apenas clicando no botão como abaixo:
-![Executando cobertura de testes](https://resources.jetbrains.com/help/img/idea/2019.3/run-with-coverage.png)
+![Add plugin](https://user-images.githubusercontent.com/4295964/28477847-bdea8c28-6e0a-11e7-988f-85584c20ac73.png)
 
-# Testando os serviços disponíveis
+# Running the application
 
-Para testar os serviços disponíveis, disponibilizei uma Collection do Postman para facilitar. 
-> [Link para download do postman](https://www.postman.com/downloads/)
 
-Feito a instalação, importe a collection: **truck_terminal.postman_collection.json** que encontra-se na raiz do projeto. 
-> [Tutorial para importação de dados no Postman](https://learning.postman.com/docs/postman/collection-runs/working-with-data-files/)
+To run the application, right-click on the file: **TruckTerminalApplication** which is in the
+**br.com.devnaweb.trucks** and press **Run**.
 
-Agora sinta-se à vontade para testar a aplicação, todos os endpoints disponíveis só funcionarão com a aplicação rodando, lembre-se disso.
+You can see the application running on port **8080**. I left some data scheduled for insertion into the database
+during compilation time in order to manually test the developed endpoints. To access the database, go to
+for:
+> [LOCALHOST](http://localhost:8080/h2)
 
-# Outros
-A fim de documentar as tarefas produzidas, criei um board no **Trello** para definir o que iria fazer. 
->[Board público no Trello.](https://trello.com/b/o9WvoKSO/truck-terminal)
+You can also view code coverage in tests and run the application tests by right clicking on
+**java** folder found under **test** and selecting the desired one or just clicking the button as below:!
 
-Me coloco à disposição para maiores esclarecimentos.
+[Running test coverage](https://resources.jetbrains.com/help/img/idea/2019.3/run-with-coverage.png)
 
-Contato:
->Email: daniel_aguiar_alves@hotmail.com   
->[Whatssapp: +55 11 954372685](https://api.whatsapp.com/send?phone=5511954372685&text=Ol%C3%A1%20Daniel%2C%20tudo%20bem%3F)  
->[Meu site pessoal](https://eu-danialves.com.br)  
->[Meu blog pessoal em construção](https://devnaweb.com.br)
+# Testing available services
+
+To test the services available, I made a Postman Collection available to facilitate.
+> [Download link](https://www.postman.com/downloads/)
+
+After installation, import the collection: **truck_terminal.postman_collection.json** which is at the root of the project.
+> [Tutorial for importing data into Postman](https://learning.postman.com/docs/postman/collection-runs/working-with-data-files/)
+
+Now feel free to test the application, all available endpoints will only work with the application running,
+remember this.
+
+# Others
+
+In order to document the tasks produced, I created a board in **Trello** to define what I was going to do.
+> [Public Trello board](https://trello.com/b/o9WvoKSO/truck-terminal)
+
+I make myself available for further clarification.
+
+Contact:
+> Mail: daniel_aguiar_alves@hotmail.com   
+> [Whatssapp: +55 11 954372685](https://api.whatsapp.com/send?phone=5511954372685&text=Ol%C3%A1%20Daniel%2C%20tudo%20bem%3F)  
+> [Personal site](https://eu-danialves.com.br)  

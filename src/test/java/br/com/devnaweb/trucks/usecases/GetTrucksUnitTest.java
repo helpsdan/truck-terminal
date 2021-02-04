@@ -30,7 +30,7 @@ public class GetTrucksUnitTest {
     }
 
     @Test
-    @DisplayName("Deve ser possível retornar os caminhões agrupados por datas")
+    @DisplayName("Should get trucks")
     void shouldGetTrucks() {
         final TruckReport truckReport = getTrucks.execute();
 

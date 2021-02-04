@@ -10,25 +10,25 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 public class DateUtilsUnitTest {
 
     @Test
-    @DisplayName("Deve ser possível retornar a data de hoje.")
+    @DisplayName("Should get today date")
     void shouldGetDateToday() {
         assertNotNull(DateUtils.getDateToday());
     }
 
     @Test
-    @DisplayName("Deve ser possível retornar o primeiro dia dessa semana.")
+    @DisplayName("Should get first day of this week")
     void shouldGetFirstDayThisWeek() {
         assertNotNull(DateUtils.getDateFirstDayThisWeek());
     }
 
     @Test
-    @DisplayName("Deve ser possível retornar o primeiro horário do dia.")
+    @DisplayName("Should get first hour of this day")
     void shouldGetFirstHourThisDay() {
         assertNotNull(DateUtils.getFirstHourThisDay());
     }
 
     @Test
-    @DisplayName("Deve ser possível retornar o primeiro dia desse mês.")
+    @DisplayName("Should get first gay of this month")
     void shouldGetFirstDayThisMonth() {
         assertNotNull(DateUtils.getDateFirstDayOfTheMonth());
     }

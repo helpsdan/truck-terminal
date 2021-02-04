@@ -31,7 +31,7 @@ public class GetDriversNoChargeUnitTest {
     }
 
     @Test
-    @DisplayName("Deve ser possível retornar os caminhoneiros que estão sem carga.")
+    @DisplayName("Should get drivers without charge")
     void shouldGetDriversNoCharge() {
         List<Driver> driversNoCharge = getDriversNoCharge.execute();
 

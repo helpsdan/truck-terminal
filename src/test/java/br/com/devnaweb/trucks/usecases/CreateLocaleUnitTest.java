@@ -22,7 +22,7 @@ public class CreateLocaleUnitTest {
     private LocaleRepository localeRepository;
 
     @Test
-    @DisplayName("Deve ser possível cadastrar os locais.")
+    @DisplayName("Should create locales")
     void shouldCreateLocale() {
         createLocale.execute(LocaleFixture.defaultValues(), 1L);
         verify(localeRepository, times(2)).save(any());

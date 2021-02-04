@@ -37,7 +37,7 @@ public class CreateDriverUnitTest {
     }
 
     @Test
-    @DisplayName("Deve ser possível cadastrar um motorista.")
+    @DisplayName("Should create a truck driver")
     void shouldCreateDriver() {
         final Driver savedDriver = createDriver.execute(driver);
 

@@ -29,7 +29,7 @@ public class GetLocalesUnitTest {
     }
 
     @Test
-    @DisplayName("Deve ser possível retornar as localidades agrupadas por origem e destino")
+    @DisplayName("Should get locales grouped by truck type")
     void shouldGetLocales() {
         final Locales locales = getLocales.execute();
 

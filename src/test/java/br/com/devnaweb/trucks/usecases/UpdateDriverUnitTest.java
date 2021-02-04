@@ -45,7 +45,7 @@ public class UpdateDriverUnitTest {
     }
 
     @Test
-    @DisplayName("Deve ser possível atualizar os dados do caminhoneiro.")
+    @DisplayName("Should update driver")
     void shouldUpdateDriver() {
         final Driver savedDriver = updateDrivers.execute(1L, driver);
 
@@ -61,7 +61,7 @@ public class UpdateDriverUnitTest {
     }
 
     @Test
-    @DisplayName("Deve ser lançada uma excessão quando não for encontrado um motorista ao atualizar.")
+    @DisplayName("Should not update driver when driver not found")
     void shouldFailWhenDriverNotFound() {
         when(driverRepository.findById(anyLong())).thenThrow(new DriverNotFoundException());
         assertThrows(DriverNotFoundException.class, () -> {
